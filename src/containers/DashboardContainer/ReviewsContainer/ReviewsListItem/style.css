@@ -1,0 +1,26 @@
+.review-top-row,
+.review-bottom-row {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--very-dark-gray);
+}
+
+.review-top-row .review-date {
+  margin-left: auto;
+  color: var(--gray-text);
+}
+
+.review-top-row .avatar {
+  margin-right: 10px;
+}
+
+.review-bottom-row.content-list-item__row {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+}
+
+.review-bottom-row .rating,
+.review-bottom-row .repair-type {
+  display: grid;
+  row-gap: 10px;
+}

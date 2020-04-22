@@ -1,0 +1,117 @@
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.6s ease-in;
+  z-index: -1;
+}
+
+.sidebar-overlay.opened {
+  z-index: 33;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: -100vw;
+  top: 0;
+  bottom: 0;
+  min-height: 100vh;
+  width: calc(50% - 190px);
+  background-color: white;
+  z-index: 34;
+  padding: var(--header-height) 0 67px;
+  opacity: 0;
+  transition: all 0.6s ease-in;
+}
+
+.sidebar-content.opened {
+  right: 0;
+  opacity: 1;
+}
+
+.sidebar-nav {
+  padding: 0 0 50px;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.sidebar-nav-link {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 56px;
+  color: var(--dark-gray);
+  padding-left: 67px;
+  padding-right: 50px;
+  transition: all 0.4s;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-nav-link.active {
+  color: var(--light-red);
+  border-left: 3px solid var(--light-red);
+  pointer-events: none;
+  opacity: 1;
+}
+
+.sidebar-content .social-buttons,
+.sidebar-store-buttons {
+  padding-left: 67px;
+}
+
+.sidebar-store-buttons {
+  margin-top: auto;
+}
+
+.sidebar-store-buttons h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  margin: 0 0 10px;
+  color: var(--gray);
+}
+
+.sidebar-store-buttons a {
+  margin: 20px 20px 0 0;
+}
+
+.sidebar-store-buttons .store-button {
+  display: inline-flex;
+  background-color: #f8f8f8;
+  height: 37px;
+  padding: 5px 20px;
+  font-size: 12px;
+  opacity: 0.8;
+  transition: all 0.4s;
+}
+
+.sidebar-store-buttons .store-button:hover {
+  opacity: 1;
+}
+
+.sidebar-content .social-buttons {
+  margin-top: 60px;
+}
+
+.sidebar-content .social-buttons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 8px 10px 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  opacity: 0.65;
+  transition: all 0.4s;
+  transform: scale(1, 1);
+  margin-right: 12px;
+}
+
+.sidebar-content .social-buttons a:hover {
+  opacity: 1;
+  transform: scale(1.15, 1.15);
+}

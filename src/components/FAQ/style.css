@@ -1,0 +1,41 @@
+.faq-top-section {
+  padding: 104px 0 142px;
+}
+
+.faq-top-section h1 {
+  margin: 15px 0 40px;
+}
+
+.faq-top-section form.search-form {
+  width: 653px;
+}
+
+.faq-top-section form.search-form input {
+  border-bottom-width: 1px;
+  padding: 18px 136px 18px 40px;
+  width: 100%;
+}
+
+.faq-top-section form.search-form .input-field::placeholder {
+  color: #8c8e9c;
+}
+
+.faq-top-section form.search-form .button-blue {
+  position: absolute;
+  bottom: 18px;
+  right: 0;
+}
+
+details summary::-webkit-details-marker,
+details summary::marker {
+  display: none;
+}
+
+.faq-list-section h2 {
+  width: 500px;
+  margin: 40px 0 60px;
+}
+
+.faq-list-section .border-card {
+  margin-top: 40px;
+}

@@ -1,0 +1,41 @@
+.weekday-row {
+  display: flex;
+  padding: 0 0 37px;
+  font-size: 12px;
+  align-items: center;
+}
+
+.weekday-row svg {
+  margin-right: 10px;
+}
+
+.weekday-row .day-name {
+  display: flex;
+  align-items: center;
+  width: 130px;
+}
+
+.weekday-row .time-selector {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.weekday-row .time-selector svg {
+  margin-left: -22px;
+  z-index: -1;
+}
+
+.weekday-row .time-selector select {
+  appearance: none;
+  border: none;
+  padding: 1px 24px 1px 5px;
+  font-size: 12px;
+  line-height: normal;
+  background-color: transparent;
+  font-family: 'Poppins', sans-serif;
+}
+
+.weekday-row .switcher-row {
+  width: 110px;
+}

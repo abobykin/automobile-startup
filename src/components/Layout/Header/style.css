@@ -1,0 +1,9 @@
+.sign-buttons {
+  display: flex;
+  margin-left: auto;
+  z-index: 36;
+}
+
+.sign-buttons .button {
+  margin: 0 10px;
+}

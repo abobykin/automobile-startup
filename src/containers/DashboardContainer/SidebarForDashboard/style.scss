@@ -1,0 +1,55 @@
+.sidebar {
+  &-body {
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  &-menu {
+    font-family: 'Poppins', sans-serif;
+    ul {
+      list-style: none;
+      padding: 0 0 10px;
+      margin: 0;
+    }
+    a.sidebar-menu-link {
+      position: relative;
+      display: block;
+      font-size: 14px;
+      line-height: 16px;
+      padding: 21px 50px 18px;
+      position: relative;
+      color: var(--gray);
+      border-left: 3px solid transparent;
+      transition: all 0.4s;
+      &:hover {
+        border-left-color: var(--gray);
+        background-color: rgba(190, 188, 207, 0.07);
+      }
+      &.active,
+      &.active-whole {
+        color: var(--blue);
+        border-left-color: var(--blue);
+        outline: none;
+        opacity: 1;
+        pointer-events: none;
+      }
+      &.active:active {
+        outline: none;
+      }
+      svg {
+        position: absolute;
+        top: calc(50% - 6px);
+        left: 18px;
+        * {
+          transition: all 0.4s;
+        }
+      }
+    }
+  }
+  .membership-notice {
+    font-size: 13px;
+    line-height: 22px;
+    color: var(--gray);
+    margin: 22px 0;
+  }
+}

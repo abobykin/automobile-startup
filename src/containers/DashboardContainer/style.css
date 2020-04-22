@@ -1,0 +1,31 @@
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 263px 1fr;
+  column-gap: 29px;
+  padding: 40px 25px;
+}
+
+.dashboard-container h2 {
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0 0 39px;
+}
+
+.dashboard-container .gray-highlighted {
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 28.8px;
+  color: var(--gray);
+}
+
+.dashboard-container .profile-card {
+  margin-bottom: 70px;
+}
+
+.dashboard-container .content-list {
+  padding: 70px 40px 0;
+}
+
+.dashboard-content {
+}

@@ -1,0 +1,20 @@
+.howitworks-video-section {
+  padding: 0;
+  margin-top: var(--pages-under-header-top-margin);
+  color: white;
+}
+
+.our-process-section {
+  padding: 65px 0 90px;
+}
+
+.howitworks-video-section .video-placeholder {
+  width: 100vw;
+  height: 100vh;
+}
+
+.howitworks-video-section .close-video-button {
+  top: 54px;
+  right: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+}

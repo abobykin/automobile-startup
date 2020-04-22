@@ -1,0 +1,204 @@
+.signup-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: var(--pages-under-header-top-margin);
+  transition: all 0.6s;
+  opacity: 0;
+}
+
+.signup-container.loaded {
+  opacity: 1;
+}
+
+.signup-container .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signup-container .info-graphic-column {
+  background-size: cover;
+  background-position: top center;
+  min-height: 100vh;
+}
+
+.signup-customer-container .info-graphic-column {
+  background-image: url('/img/signup-customer.jpg');
+}
+
+.signup-container .info-graphic-column h2 {
+  color: white;
+  margin: 17px 0 12px;
+}
+
+.signup-container .info-graphic-column .centered-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: calc(50vh - 90px);
+}
+
+.signup-container .already-have-account-link,
+.signup-container .already-have-account-link a {
+  margin: 0 5px;
+  color: white;
+}
+
+.signup-container .already-have-account-link {
+  margin: 70px 0;
+}
+
+.signup-container .form-column {
+  padding: 63px 30px 70px 80px;
+  align-items: flex-start;
+}
+
+.signup-container .form-row {
+  max-width: 400px;
+}
+
+.signup-container .button-blue {
+  min-width: 121px;
+}
+
+.signup-container .social-login-suggestion {
+  font-family: 'Poppins', sans-serif;
+  margin: 12vh 0 0;
+  font-size: 12px;
+}
+
+.signup-container .social-login-suggestion .button {
+  margin: 10px 20px 0 0;
+}
+
+.signup-container .form-steps-buttons {
+  margin: 12vh 0 0;
+  padding-top: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup-container .button-back {
+  justify-content: space-between;
+}
+
+.signup-container .button.skip-link {
+  border-color: transparent;
+  background-color: transparent;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  color: #8c8e9c;
+  min-width: auto;
+  text-align: center;
+  transition: all 0.4s;
+}
+
+.signup-container .button.skip-link:hover,
+.signup-container .button.skip-link:focus {
+  opacity: 1;
+  color: #5d6072;
+}
+
+.signup-container .add-link {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 3px 5px;
+  margin: 12px -5px;
+  color: var(--blue);
+  font-size: 14px;
+  line-height: normal;
+  font-family: 'Poppins', sans-serif;
+  opacity: 0.85;
+  transition: all 0.4s;
+  padding: 4px 6px;
+}
+
+.signup-container .add-link svg {
+  margin-right: 8px;
+}
+
+.signup-container .add-link:hover,
+.signup-container .add-link:focus {
+  opacity: 1;
+}
+
+/* Signup Business */
+
+.signup-business-container .info-graphic-column {
+  background-image: url('/img/signup-business.jpg');
+}
+
+.signup-business-container .form-heading-block .form-steps {
+  padding-left: 5px;
+}
+
+.signup-business-container .form-step-1-content {
+  padding-bottom: calc(50vh - 270px);
+}
+
+.signup-business-container .form-column .form-step-2-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
+  column-gap: 60px;
+  margin-right: -20px;
+}
+
+.signup-business-container .form-column .controls-group {
+  margin-right: 30px;
+}
+
+.signup-business-container .form-step-2-content + .form-steps-buttons,
+.signup-business-container .form-step-3-content + .form-steps-buttons {
+  margin-top: 50px;
+  padding-top: 0;
+  margin-left: -40px;
+}
+
+.signup-business-container .form-step-3-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 18px;
+}
+
+.signup-business-container .form-column h4 {
+  margin-bottom: 35px;
+}
+
+.signup-business-container .form-column .opening-hours {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.signup-business-container .opening-hours .weekday-row,
+.signup-business-container .opening-hours h4 {
+  width: 100%;
+}
+
+.signup-business-container .form-step-2-content,
+.signup-business-container .form-step-3-content {
+  margin-left: -40px;
+}
+
+.signup-business-container .form-step-2-content .form-steps-buttons {
+  margin-top: 7vh;
+}
+
+.signup-business-container .form-step-2-content {
+  min-width: 860px;
+}
+
+.signup-business-container .form-step-2-content .form-steps-buttons {
+  padding: 0;
+  margin-top: 5vh;
+}
+
+.signup-business-container .checkbox-card {
+  margin: 10px 0;
+}

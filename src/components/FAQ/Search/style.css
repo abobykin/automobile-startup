@@ -1,0 +1,18 @@
+.search-form {
+  position: relative;
+}
+
+.search-form .input-field {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.search-form .input-field::placeholder {
+  color: #8c8e9c;
+}
+
+.search-form .icon-search {
+  position: absolute;
+  left: 0;
+  bottom: 17px;
+}

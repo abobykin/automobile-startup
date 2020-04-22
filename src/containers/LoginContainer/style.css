@@ -1,0 +1,189 @@
+.login-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: var(--pages-under-header-top-margin);
+  transition: all 0.6s;
+  opacity: 0;
+}
+
+.login-container.loaded {
+  opacity: 1;
+}
+
+.login-container .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-container .info-graphic-column {
+  background-size: cover;
+  background-position: top center;
+  min-height: 100vh;
+}
+
+.login-container .info-graphic-column {
+  background-image: url('/img/login-back.jpg');
+}
+
+.login-container .info-graphic-column h2 {
+  color: white;
+  margin: 17px 0 12px;
+}
+
+.login-container .info-graphic-column p {
+  color: white;
+}
+
+.login-container .info-graphic-column .centered-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: calc(50vh - 130px) auto 0;
+  max-width: 300px;
+}
+
+.login-container .form-column {
+  padding: 63px 30px 70px 80px;
+  align-items: flex-start;
+}
+
+.login-container .form-row {
+  max-width: 400px;
+}
+
+.login-container .button-blue {
+  min-width: 121px;
+}
+
+.login-container .signup-suggestion {
+  font-size: 14px;
+  color: var(--dark-gray);
+}
+
+.login-container .social-login-suggestion {
+  font-family: 'Poppins', sans-serif;
+  margin: 12vh 0 0;
+  font-size: 12px;
+}
+
+.login-container .social-login-suggestion .button {
+  margin: 10px 20px 0 0;
+}
+
+.login-container .form-steps-buttons {
+  margin: 12vh 0 0;
+  padding-top: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-container .button-back {
+  justify-content: space-between;
+}
+
+.login-container .button.skip-link {
+  border-color: transparent;
+  background-color: transparent;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  color: #8c8e9c;
+  min-width: auto;
+  text-align: center;
+  transition: all 0.4s;
+}
+
+.login-container .button.skip-link:hover,
+.login-container .button.skip-link:focus {
+  opacity: 1;
+  color: #5d6072;
+}
+
+.login-container .add-link {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 3px 5px;
+  margin: 12px -5px;
+  color: var(--blue);
+  font-size: 14px;
+  line-height: normal;
+  font-family: 'Poppins', sans-serif;
+  opacity: 0.85;
+  transition: all 0.4s;
+  padding: 4px 6px;
+}
+
+.login-container .add-link svg {
+  margin-right: 8px;
+}
+
+.login-container .add-link:hover,
+.login-container .add-link:focus {
+  opacity: 1;
+}
+
+.login-container .login-form-block {
+  position: relative;
+  width: 390px;
+  padding-top: 13vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.login-container .login-form-block h3 {
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0;
+}
+
+.login-form-block .forgot-password-link {
+  font-family: 'Poppins', sans-serif;
+  margin-left: 20px;
+}
+
+.login-container .login-form-block p {
+  color: #757789;
+  margin: 0 0 30px;
+}
+
+.login-form-block .controls-group label {
+  margin-bottom: 7px;
+}
+
+.login-form-block .controls-group .button.bordered,
+.top-switch-buttons .button.bordered {
+  border-color: rgba(25, 29, 58, 0.05);
+  margin-right: 20px;
+}
+
+.login-form-block .top-switch-buttons {
+  position: absolute;
+  top: -15px;
+  left: 0;
+}
+
+.top-switch-buttons .button.bordered {
+  margin: 0;
+}
+
+.top-switch-buttons .button.bordered:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.top-switch-buttons .button.bordered:nth-child(2) {
+  border-radius: 0 5px 5px 0;
+}
+
+.top-switch-buttons .button.bordered.active {
+  background-color: var(--light-red);
+  color: white;
+  pointer-events: none;
+  opacity: 1;
+}

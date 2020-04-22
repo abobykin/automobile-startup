@@ -1,0 +1,82 @@
+.signup-options-screen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: var(--pages-under-header-top-margin);
+}
+
+.signup-options-screen > div > svg {
+  transform: scale(5.5, 5.5);
+  margin: 80px;
+}
+
+.signup-options-screen .iconEngine .fillLayer {
+  fill: white;
+}
+
+.already-have-account-link {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 35px 0;
+}
+
+.signup-options-screen > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.signup-options-screen .button {
+  width: 293px;
+  height: 46px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.signup-options-screen .business-signup {
+  position: relative;
+  background-color: var(--blue);
+}
+
+.signup-options-screen .business-signup h2,
+.signup-options-screen .business-signup a {
+  color: white;
+}
+
+.signup-options-screen .business-signup .button {
+  color: var(--dark-gray);
+  width: 293px;
+  height: 46px;
+  text-align: center;
+}
+
+.signup-options-screen h2 {
+  margin: 20px 7px 0;
+}
+
+.signup-options-screen > div a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.signup-options-screen .business-signup .button-back {
+  position: absolute;
+  top: 47px;
+  left: 67px;
+  color: white;
+  display: inline-flex;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  z-index: 1;
+  width: 94px;
+}
+
+.business-signup .already-have-account-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.business-signup .button-back svg {
+  margin-right: 10px;
+}

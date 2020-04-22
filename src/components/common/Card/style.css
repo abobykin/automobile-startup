@@ -1,0 +1,51 @@
+.border-card {
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.border-card h3 {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 46px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.border-card details summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 40px 25px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.4s;
+}
+
+.border-card details[open] summary,
+.border-card details summary:focus,
+.border-card details summary:hover {
+  opacity: 1;
+}
+
+.border-card p {
+  padding: 15px 40px 40px;
+  margin: 0;
+}
+
+details svg {
+  transition: all 0.4s;
+  transform: rotate(0) scale(1.5, 1.5);
+}
+
+details[open] svg {
+  transform: rotate(180deg) scale(1.5, 1.5);
+}
+
+details[open] svg .fillLayer {
+  transition: fill 0.4s;
+  fill: var(--light-red);
+}
+
+::-webkit-details-marker {
+  display: none;
+}

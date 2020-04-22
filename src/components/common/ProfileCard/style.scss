@@ -1,0 +1,70 @@
+.profile-card {
+  font-family: 'Poppins', sans-serif;
+  padding: 21px 0;
+  background-color: white;
+  border-radius: 6px;
+  &-content {
+    display: grid;
+    grid-template-columns: 44% 56%;
+    & > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .left-column {
+      align-items: center;
+      .avatar {
+        display: inline-block;
+        margin: 20px 0 5px;
+      }
+      .name {
+        margin: 8px auto 3px;
+      }
+      .address {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        color: #757789;
+        margin: 0 auto 15px;
+      }
+      .rating {
+        margin: 0 auto 25px;
+      }
+    }
+    .personal-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      font-size: 14px;
+      padding: 20px 40px;
+      border-left: 1px solid rgba(25, 29, 58, 0.1);
+      h4 {
+        margin-top: 0;
+      }
+      * {
+        font-size: 14px;
+      }
+      &__row {
+        margin: 10px auto 26px;
+        display: grid;
+        grid-template-columns: 1.2fr 2fr;
+        align-items: center;
+      }
+      &__propery-label {
+        color: #757789;
+      }
+      &__propery-name {
+      }
+      .edit-button-block {
+        display: flex;
+        align-items: center;
+        .button {
+          width: 200px;
+          margin-right: 20px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

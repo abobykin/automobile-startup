@@ -1,0 +1,83 @@
+.switcher {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  margin: 0 9px 0 0;
+  display: inline-block;
+  vertical-align: text-bottom;
+  background-color: #ff827a;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.switcher-row {
+  display: inline-flex;
+  align-items: center;
+}
+
+.switcher-row * {
+  transition: all 0.4s;
+}
+
+.switcher-toggle:checked + .switcher {
+  background-color: #62e5a5;
+}
+
+.switcher-trigger {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.switcher-toggle:checked + .switcher > .switcher-trigger {
+  width: 6px;
+  left: calc(100% - 13px);
+  border-radius: 13px;
+}
+
+.switcher-text {
+  color: #8c8e9c;
+}
+
+.switcher-text.on {
+  opacity: 0;
+  display: none;
+  color: #222222;
+}
+
+.switcher-toggle:checked + .switcher + .switcher-text {
+  opacity: 0;
+  display: none;
+}
+
+.switcher-toggle:checked + .switcher + .switcher-text + .on {
+  opacity: 1;
+  display: inline-block;
+}
+
+.switcher-row:has(.switcher-toggle:checked) + .time-selector {
+  display: none;
+}
+
+/* Shadow for trigger (maybe it would be needed later) */
+/* .switcher-trigger-shadow {
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+}
+
+.switcher-toggle:checked + .switcher > .switcher-trigger-shadow {
+  left: calc(100% - 21px);
+} */
